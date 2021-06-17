@@ -1,5 +1,6 @@
 /* GENERICS */
 body {
+    font-size: 12px;
     font-family: Montserrat;
     color: white;
     background-color: rgb(20, 25, 34);
@@ -22,12 +23,37 @@ body {
 
 /* HEADER  */
 #main-header {
-    height: 60px;
+    height: 80px;
     background-color: rgba(0, 0, 0, 0.3); 
     position:fixed;
     top: 0;
     width: 100%;
+    line-height: 80px;
+   
 }    
+
+.btn {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.btn a {
+    padding: 8px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER  */
@@ -35,4 +61,16 @@ footer {
     background-color: rgb(40, 40, 40);
     height: 60px;
     
+}
+
+
+
+@media screen and (min-width: 576px) {
+    #navbar {
+        width: 200px;
+    }
+
+    .btn {
+        padding-right: 200px;
+    }
 }
