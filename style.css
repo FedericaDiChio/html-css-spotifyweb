@@ -1,0 +1,38 @@
+/* GENERICS */
+body {
+    font-family: Montserrat;
+    color: white;
+    background-color: rgb(20, 25, 34);
+}
+
+.container-fluid {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.main-container {
+    display: flex;
+}
+
+/* NAVBAR */
+#navbar{
+    background-color: rgba(0, 0, 0);
+    width: 30px;
+}
+
+/* HEADER  */
+#main-header {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    position:fixed;
+    top: 0;
+    width: 100%;
+}    
+
+
+/* FOOTER  */
+footer {
+    background-color: rgb(40, 40, 40);
+    height: 60px;
+    
+}
