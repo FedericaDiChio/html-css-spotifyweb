@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- HOMEPAGE CONTAINER  -->
-    <div class="wrapper">  <!-- Trovare altro nome-->
+    <!-- WRAPPER  -->
+    <div class="wrapper">
         <!-- LEFT NAVBAR  -->
         <nav id="navbar-sm" class="bg-black">
             <div class="icons-nav">
@@ -25,122 +25,123 @@
                 <img src="./img/profile.svg" alt="profile-user">
                 <img src="./img/download.svg" alt="download">
             </div>
-        </nav> 
-        <nav id="navbar" class="bg-black">
-            <!-- <img src="./img/logo.svg" alt="logo">
-            <img src="./img/home.svg" alt="home">
-            <img src="./img/search.svg" alt="search">
-            <img src="./img/libreria.svg" alt="library"> -->
-        </nav>                       
-         <!-- HEADER  -->
+        </nav>
+        <!-- <nav id="navbar" class="bg-black">
+            <img src="./img/logo.svg" alt="logo">
+                <img src="./img/home.svg" alt="home">
+                <img src="./img/search.svg" alt="search">
+                <img src="./img/libreria.svg" alt="library">
+        </nav> -->
+        <!-- MAIN  -->
+        <main>
+            <!-- HEADER  -->
             <header id="main-header">
                 <div class="btn txt-right">
                     <a href="">Effettua l'upgrade</a>
                 </div>
             </header>
-            <!-- MAIN CONTENT  -->
-            <main>
-                <!-- MAIN NAV LIST -->
-                <div class="main-nav row">
-                    <ul class="list-nav">
-                            <li>In evidenza</li>
-                            <li>Podcast</li>
-                            <li>Classifiche</li>
-                            <li>Generi e mood</li>
-                            <li>Nuove uscite</li>
-                            <li>Scopri</li>
-                        </ul>
+            <!-- MAIN NAV LIST -->
+            <div class="main-nav row">
+                <ul class="list-nav">
+                    <li>In evidenza</li>
+                    <li>Podcast</li>
+                    <li>Classifiche</li>
+                    <li>Generi e mood</li>
+                    <li>Nuove uscite</li>
+                    <li>Scopri</li>
+                </ul>
+            </div>
+            <!-- MAIN ALBUM  -->
+            <div class="album">
+                <!-- (Dubbio amletico) -->
+                <!-- ROW 1 RECENT MUSIC -->
+                <h1>Recently Played</h1>
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/metal_lifting.jpg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/stranger.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/aquietplace.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/split.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/cure.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/sinister.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- ALBUM  -->
-                <div class="album">    <!-- (Dubbio amletico) -->
-                    <!-- ROW 1 RECENT MUSIC -->
-                    <h1>Recently Played</h1>
-                    <div class="row">
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/metal_lifting.jpg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/stranger.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/aquietplace.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/split.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/cure.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/sinister.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
+                <!-- ROW 2 MUSIC CREATED FOR USER -->
+                <h1>Creato per John Doe</h1> <!-- (altro dubbio amletico) -->
+                <p>Più ascolti più saranno accurati i suggerimenti</p>
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/radar.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
                         </div>
                     </div>
-                    <!-- ROW 2 MUSIC CREATED FOR USER -->
-                    <h1>Creato per John Doe</h1> <!-- (altro dubbio amletico) -->
-                    <p>Più ascolti più saranno accurati i suggerimenti</p>
-                    <div class="row">
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/radar.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/mixdaily.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/mixdaily.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
                         </div>
                     </div>
-                    <!-- ROW 3 POPULAR -->
-                    <h1>Artisti più popolari</h1>
-                    <p>Più ascolti più saranno accurati i suggerimenti</p>
-                    <div class="row">
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/youg.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-2">
-                            <img src="./img/einaudi.jpeg" alt="cover-album">
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <p>Subtitle</p>
-                            </div>
+                </div>
+                <!-- ROW 3 POPULAR -->
+                <h1>Artisti più popolari</h1>
+                <p>Più ascolti più saranno accurati i suggerimenti</p>
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/youg.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
                         </div>
                     </div>
-                    
-                </div>  <!-- DIV di chiusura di album-->
-            </main>    
-    </div>     <!-- DIV di chiusura di wrapper-->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <img src="./img/einaudi.jpeg" alt="cover-album">
+                        <div>
+                            <h4>Heavy Metal</h4>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </main>
+    </div>
     <!-- FOOTER -->
     <footer>  
         
