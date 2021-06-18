@@ -12,8 +12,8 @@ body {
 main {
     background-color: rgb(20, 25, 34);
     height: calc(100vh - 80px);
+    width: calc(100vw - 230px);
     overflow-y: auto;
-    flex-grow: 1;
 }
 
 /* UTILITIES */
@@ -31,16 +31,13 @@ main {
 }
 
 /* NAVBAR */
-#navbar-sm{
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 #navbar {
-    display: none;
-    width: 200px;
+    width: 230px;
+}    
+
+#navbar img:not(#logo) {
+    width: 10%;
+    padding-top: 5px;
 }
 
 /* HEADER  */              /* TODO centrare il bottone */  
@@ -86,7 +83,6 @@ main .album {                    /* TODO sempre sistemare padding con classi */
 .album img {                       /* TODO sempre sistemare padding con classi */ 
     width: 90%;
     padding-right: 10px;
-   
 }
 
 /* FOOTER  */
@@ -97,19 +93,8 @@ footer {
 
 
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
     .btn {
         padding-right: 30px;
     }
-
-    /* #navbar-sm {
-        display: none;
-    }
-
-    #navbar {
-        display: block;
-    } */
-
-}
-
-
+}     */
