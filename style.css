@@ -1,5 +1,7 @@
+/* GENERICS */
 body {
     color:white;
+    font-family: Montserrat;
 }
 
 .wrapper {
@@ -10,9 +12,7 @@ body {
 
 
 
-
 /* NAVBAR */
-
 #navbar {
     width: 230px;
     background-color: black;
@@ -30,18 +30,13 @@ body {
 
 
 
-
-
-
 /* MAIN  */
-
 main {
     overflow-y: auto;
     background-color: rgb(20, 25, 34);
     flex-grow: 1;
     padding-top: 100px;
 }
-
 
 
 
@@ -65,7 +60,6 @@ main {
 
 
 
-
 /* FOOTER  */
 .player-controls {
     display: flex;
@@ -74,7 +68,6 @@ main {
     height: 80px;
     background-color: rgb(40, 40, 40);
 }
-
 
 .player-controls img {
     width: 40px;
