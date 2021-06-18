@@ -16,6 +16,10 @@ main {
     overflow-y: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* UTILITIES */
 
 .txt-center {
@@ -36,8 +40,9 @@ main {
 }    
 
 #navbar img:not(#logo) {
-    width: 10%;
+    width: 12%;
     padding-top: 5px;
+    
 }
 
 /* HEADER  */              /* TODO centrare il bottone */  
@@ -59,12 +64,13 @@ main {
 
 /* LIST  */
 
-.row .list-nav {
+.main-nav .row {
     padding-top: 100px;
-    
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.row .list-nav li {
+.row li {
     text-transform: uppercase;
     padding: 0 10px;
     list-style-type: none;
@@ -98,3 +104,8 @@ footer {
         padding-right: 30px;
     }
 }     */
+
+/* sistemare */
+.row {
+    align-items: center;
+}
