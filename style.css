@@ -1,59 +1,60 @@
-/* GENERICS */
 body {
-    font-size: 12px;
-    font-family: Montserrat;
-    color: white;
+    color:white;
 }
 
 .wrapper {
     display: flex;
-}
-
-main {
-    background-color: rgb(20, 25, 34);
     height: calc(100vh - 80px);
-    width: calc(100vw - 230px);
-    overflow-y: auto;
-}
+    background-color: green;
+}    
 
-a {
-    text-decoration: none;
-}
 
-/* UTILITIES */
 
-.txt-center {
-    text-align: center;
-}
-
-.txt-right {
-    text-align: right;
-}
-
-.bg-black {
-    background-color: rgb(0, 0, 0);
-}
 
 /* NAVBAR */
+
 #navbar {
     width: 230px;
-}    
-
-#navbar img:not(#logo) {
-    width: 12%;
-    padding-top: 5px;
-    
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
-/* HEADER  */              /* TODO centrare il bottone */  
+#navbar img:not(#logo) {
+    width: 25px;
+}
+
+.nav-2nd {
+    flex-grow: 2;
+}
+
+
+
+
+
+
+/* MAIN  */
+
+main {
+    overflow-y: auto;
+    background-color: rgb(20, 25, 34);
+    flex-grow: 1;
+    padding-top: 100px;
+}
+
+
+
+
+
+/* HEADER  */
 #main-header {
-    height: 80px;
-    background-color: rgba(0, 0, 0, 0.3); 
-    position:fixed;
+    position: fixed;
+    width: calc(100% - 230px);
     top: 0;
-    left: 0;
-    width: 100%;
-}    
+    right: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 .btn a {             
     padding: 8px 20px;
@@ -62,50 +63,31 @@ a {
 }
 
 
-/* LIST  */
-
-.main-nav .row {
-    padding-top: 100px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.row li {
-    text-transform: uppercase;
-    padding: 0 10px;
-    list-style-type: none;
-}
 
 
-/* MAIN */
-main .album {                    /* TODO sempre sistemare padding con classi */ 
-    padding: 0 15px;
-}
-
-.abum h1 {
-    padding: 30px 0;
-}
-
-.album img {                       /* TODO sempre sistemare padding con classi */ 
-    width: 90%;
-    padding-right: 10px;
-}
 
 /* FOOTER  */
-footer {
-    background-color: rgb(40, 40, 40);
+.player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
+    background-color: rgb(40, 40, 40);
 }
 
 
+.player-controls img {
+    width: 40px;
+    margin: 0 10px;
+}
 
-/* @media screen and (min-width: 576px) {
-    .btn {
-        padding-right: 30px;
-    }
-}     */
+.players-controls i {
+    padding: 0 5px;
+}
 
-/* sistemare */
-.row {
+
+.player-controls .controls{
+    display: flex;
     align-items: center;
 }
+
