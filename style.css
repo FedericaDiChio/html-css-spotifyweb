@@ -7,7 +7,7 @@ body {
 }
 
 .container-fluid {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
     overflow-y: auto;
 }
 
@@ -15,62 +15,101 @@ body {
     display: flex;
 }
 
-/* NAVBAR */
-#navbar{
-    background-color: rgba(0, 0, 0);
-    width: 30px;
+/* UTILITIES */
+
+.txt-center {
+    text-align: center;
 }
 
-/* HEADER  */
+.txt-right {
+    text-align: right;
+}
+
+.bg-black {
+    background-color: rgb(0, 0, 0);
+}
+
+/* NAVBAR */
+#navbar-sm{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+#navbar {
+    display: none;
+    width: 200px;
+}
+
+/* HEADER  */              /* TODO centrare il bottone */  
 #main-header {
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3); 
     position:fixed;
     top: 0;
     width: 100%;
-    line-height: 80px;
-   
 }    
 
-.btn {
-    text-align: right;
-    padding-right: 50px;
-}
-
-.btn a {
+.btn a {             
     padding: 8px 20px;
     border: 1px solid white;
     border-radius: 20px;
 }
 
 
+/* LIST  */
+
+.row .list-nav {
+    padding-top: 100px;
+    
+}
+
+.row .list-nav li {
+    text-transform: uppercase;
+    padding: 0 10px;
+    list-style-type: none;
+}
 
 
+/* MAIN */
+main .album {                    /* TODO sempre sistemare padding con classi */ 
+    padding: 0 15px;
+}
 
+.abum h1 {
+    padding: 30px 0;
+}
 
-
-
-
-
-
-
-
+.album img {                       /* TODO sempre sistemare padding con classi */ 
+    width: 90%;
+    padding-right: 10px;
+   
+}
 
 /* FOOTER  */
 footer {
     background-color: rgb(40, 40, 40);
-    height: 60px;
-    
+    height: 80px;
 }
 
 
 
 @media screen and (min-width: 576px) {
-    #navbar {
-        width: 200px;
-    }
-
     .btn {
         padding-right: 200px;
     }
+
+    #navbar-sm {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
+    }
+
 }
+
+
