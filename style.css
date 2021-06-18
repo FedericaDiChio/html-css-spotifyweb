@@ -3,16 +3,18 @@ body {
     font-size: 12px;
     font-family: Montserrat;
     color: white;
-    background-color: rgb(20, 25, 34);
+    
 }
 
-.container-fluid {
+.wrapper {
+    display: flex;
+    
+}
+
+main {
+    background-color: rgb(20, 25, 34);
     height: calc(100vh - 80px);
     overflow-y: auto;
-}
-
-.main-container {
-    display: flex;
 }
 
 /* UTILITIES */
