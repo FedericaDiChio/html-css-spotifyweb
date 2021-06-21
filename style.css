@@ -20,8 +20,6 @@ main {
 }
 
 
-
-
 /* UTILITIES */
 .d-flex {
     display: flex; 
@@ -35,6 +33,7 @@ main {
 .center {
     justify-content: center;
 }
+
 
 .circle {
     border-radius: 50%;
@@ -50,16 +49,21 @@ main {
     margin: 30px 0;
 }    
 
+.m-20 {
+    margin: 20px 0;
+}
+
 .m-10 {
     margin: 10px 0;
 }
 
-.m-20 {
-    margin: 0 20px;
+.p-20 {
+    padding: 0 20px;
 }
 
-/* LINK  */
 
+
+/* LINK  */
 a {
     text-decoration: none;
     color: grey;
@@ -69,11 +73,11 @@ a:hover {
     color: white;
 }
 
-
-
-
-
 /* NAVBAR */
+#logo {
+    max-width: 60%;
+}
+
 #navbar {
     flex-shrink: 0;
     width: 230px;
@@ -98,7 +102,9 @@ a:hover {
 
 
 /* MAIN  */
-
+.album {
+    padding: 0 20px;
+}
 
 .album .main-nav {
     display: flex;
@@ -112,8 +118,34 @@ a:hover {
 }
 
 .album .row img {
-    max-width: 90%;
+    max-width: 100%;
+    
 }
+
+/* OVERLAY  */
+
+.img-content {
+    display: flex;
+    position: relative;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-content:hover {
+    opacity: 0.7;
+}
+
+.img-content:hover .overlay {
+    display: block;
+  }
+
+
 
 /* HEADER  */
 #main-header {
@@ -126,15 +158,19 @@ a:hover {
 }
 
 
-.btn a{             
-    padding: 8px 20px;
+
+.btn a {
+    padding: 10px 20px;
     border: 1px solid white;
+    display: inline-block;
     border-radius: 20px;
     color: white;
 }
 
+.btn a:hover {
+    transform: scale(1.5);
+}
 
-    
 
 /* FOOTER  */
 .player {
@@ -157,16 +193,20 @@ a:hover {
 
 /*! PLAYER CENTRALE  (RIVEDERE) */
 .player .control-center {
-    display: flex;
     flex-direction: column;
+    
 }
 
 .control-center i {
     padding: 0 20px;
     padding-bottom: 15px;
+    color: white;
 }
 
 
+.control-right i {
+    color: white;
+}
 
 .progression-bar {
     position: relative;
@@ -194,7 +234,7 @@ a:hover {
 }
 
 
-.fa-play-circle:hover {
+.big-btn:hover {
     transform: scale(1.2);
 }
 
@@ -204,4 +244,6 @@ a:hover {
 }
 
 
-
+@media screen and (min-width: 576px) {
+     
+}
