@@ -2,12 +2,8 @@
 body {
     font-size: 12px;
     color:white;
-    font-family: Montserrat;
+    font-family: "Montserrat", "San-serif";
     text-transform: capitalize;
-}
-
-a {
-    text-decoration: none;
 }
 
 .wrapper {
@@ -16,17 +12,65 @@ a {
     background-color: green;
 }    
 
+main {
+    overflow-y: auto;
+    background-color: rgb(20, 25, 34);
+    flex-grow: 1;
+    padding-top: 100px;
+}
+
+
+
 
 /* UTILITIES */
+.d-flex {
+    display: flex; 
+}
+
+
+.middle {
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+}
 
 .circle {
     border-radius: 50%;
 }
 
-
 .type {
     list-style-type: none;
 }
+
+/* MARGIN E PADDING */
+
+.m-30 {
+    margin: 30px 0;
+}    
+
+.m-10 {
+    margin: 10px 0;
+}
+
+.m-20 {
+    margin: 0 20px;
+}
+
+/* LINK  */
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
 
 
 /* NAVBAR */
@@ -42,6 +86,11 @@ a {
     width: 25px;
 }
 
+.nav-1st {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-2nd {
     flex-grow: 2;
 }
@@ -49,32 +98,22 @@ a {
 
 
 /* MAIN  */
-main {
-    overflow-y: auto;
-    background-color: rgb(20, 25, 34);
-    flex-grow: 1;
-    padding-top: 100px;
-}
 
-.album .nav-list {
+
+.album .main-nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.album .nav-list li {
+.album .main-nav li {
     padding: 0 20px;
     text-transform: uppercase;
 }
 
 .album .row img {
-    width: 90%;
-   
-   
+    max-width: 90%;
 }
-
-
-
 
 /* HEADER  */
 #main-header {
@@ -86,55 +125,83 @@ main {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.btn a {             
+
+.btn a{             
     padding: 8px 20px;
     border: 1px solid white;
     border-radius: 20px;
+    color: white;
 }
 
 
-
+    
 
 /* FOOTER  */
-.player-controls {
-    
-    overflow: hidden;
-    display: flex;
+.player {
     justify-content: space-between;
     align-items: center;
     height: 80px;
     background-color: rgb(40, 40, 40);
 }
 
-.player-controls img {
+.player img {
     width: 40px;
     margin: 0 10px;
 }
 
-.players-controls i {
+.players i {
     padding: 0 5px;
 }
 
 
-.player-controls .controls{
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-}
 
-.player-controls .control-center {
+/*! PLAYER CENTRALE  (RIVEDERE) */
+.player .control-center {
     display: flex;
     flex-direction: column;
 }
 
+.control-center i {
+    padding: 0 20px;
+    padding-bottom: 15px;
+}
 
 
 
+.progression-bar {
+    position: relative;
+    width: 220px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.progression {
+    position: absolute;
+    background-color: red;
+    width: 60px;
+    border-radius: 5px;
+    height: 5px;
+}
 
 
+.progression-bar.small {
+    width: 100px;
+}
+
+.progression.small {
+  width: 30px;
+}
 
 
+.fa-play-circle:hover {
+    transform: scale(1.2);
+}
 
+
+.progression:hover {
+    background-color: green;
+}
 
 
 
