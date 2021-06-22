@@ -505,10 +505,28 @@
     }
 } 
 
+/* TEXT  */
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+/* FLEX  */
+
+.d-flex {
+    display: flex;
+}
+
+.d-col {
+    flex-direction: column;
+}
 
 /* JUSTIFY CONTENT  */
 
-/* .start {
+.start {
     justify-content: flex-start;
 }
 
@@ -518,12 +536,11 @@
 
 .end {
     justify-content: flex-end;
-} */
+} 
 
+/* ALIGN ITEMS */
 
-/* ALIGN ITEMS  */
-
-/* .up {
+.up {
     align-items: flex-start;
 }
 
@@ -533,12 +550,6 @@
 
 .down {
     align-items: flex-end;
-} */
-
-.txt-center {
-    text-align: center;
 }
 
-.txt-right {
-    text-align: right;
-}
+

@@ -1,9 +1,8 @@
 /* GENERICS */
 body {
-    font-size: 12px;
+    font-size: 10px;
     color:white;
     font-family: "Montserrat", "San-serif";
-    text-transform: capitalize;
 }
 
 .wrapper {
@@ -19,21 +18,12 @@ main {
     padding-top: 100px;
 }
 
+h1 {
+    font-size: 20px;
+}
+
 
 /* UTILITIES */
-.d-flex {
-    display: flex; 
-}
-
-
-.middle {
-    align-items: center;
-}
-
-.center {
-    justify-content: center;
-}
-
 
 .circle {
     border-radius: 50%;
@@ -41,6 +31,10 @@ main {
 
 .type {
     list-style-type: none;
+}
+
+.txt-gray {
+    color: grey;
 }
 
 /* MARGIN E PADDING */
@@ -57,10 +51,21 @@ main {
     margin: 10px 0;
 }
 
-.p-20 {
+.px-5 {
+    padding: 0 5px;
+}
+
+.px-20 {
     padding: 0 20px;
 }
 
+.p-20 {
+    padding: 20px 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
 
 
 /* LINK  */
@@ -82,23 +87,29 @@ a:hover {
     flex-shrink: 0;
     width: 230px;
     background-color: black;
-    display: flex;
+    flex-direction: column;
+  
+}
+
+#navbar .nav-1st {
     flex-direction: column;
 }
 
-#navbar img:not(#logo) {
+.nav-1st img {
     width: 25px;
 }
 
-.nav-1st {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-2nd {
+#navbar .nav-2nd {
     flex-grow: 2;
 }
 
+#navbar .nav-2nd li {
+    margin: 10px 0;
+}
+
+.nav-3rd img {
+    width: 15px;
+}
 
 
 /* MAIN  */
@@ -107,9 +118,16 @@ a:hover {
 }
 
 .album .main-nav {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+}
+
+.album .main-nav .active:after {
+    content:"";
+    display: block;
+    height: 2px;
+    width: 50px;
+    background-color: green;
+    margin: 2px 15px;
 }
 
 .album .main-nav li {
@@ -119,31 +137,14 @@ a:hover {
 
 .album .row img {
     max-width: 100%;
-    
+    padding: 0 15px;
 }
 
-/* OVERLAY  */
+/* 
+.txt-white {
+    color: white;
+} */
 
-.img-content {
-    display: flex;
-    position: relative;
-}
-
-.overlay {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.img-content:hover {
-    opacity: 0.7;
-}
-
-.img-content:hover .overlay {
-    display: block;
-  }
 
 
 
@@ -157,7 +158,9 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
+.btn {
+    padding-right: 40px;           
+}
 
 .btn a {
     padding: 10px 20px;
@@ -168,14 +171,13 @@ a:hover {
 }
 
 .btn a:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
 /* FOOTER  */
 .player {
     justify-content: space-between;
-    align-items: center;
     height: 80px;
     background-color: rgb(40, 40, 40);
 }
@@ -189,12 +191,9 @@ a:hover {
     padding: 0 5px;
 }
 
-
-
-/*! PLAYER CENTRALE  (RIVEDERE) */
+/* PLAYER CENTRALE  */
 .player .control-center {
     flex-direction: column;
-    
 }
 
 .control-center i {
@@ -203,11 +202,17 @@ a:hover {
     color: white;
 }
 
-
+/* PLAYER RIGHT  */
 .control-right i {
     color: white;
 }
 
+/* CONTROL LEFT  */
+.underline:hover {
+    text-decoration: underline;
+}
+
+/* PROGRESSION BAR  */
 .progression-bar {
     position: relative;
     width: 220px;
@@ -217,20 +222,19 @@ a:hover {
 }
 
 .progression {
+    background-color: lightgrey;
     position: absolute;
-    background-color: red;
     width: 60px;
     border-radius: 5px;
     height: 5px;
 }
-
 
 .progression-bar.small {
     width: 100px;
 }
 
 .progression.small {
-  width: 30px;
+    width: 30px;
 }
 
 
@@ -239,11 +243,40 @@ a:hover {
 }
 
 
-.progression:hover {
+
+.progression-bar:hover .progression{
     background-color: green;
 }
 
+.progression-bar:hover .marker {
+    display: block;
+    content: "";
+    background-color: white;
+    height: 10px;
+    border-radius: 50%;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
 
-@media screen and (min-width: 576px) {
-     
+
+
+/* OVERLAY  */
+
+.img-content {
+    position: relative;
+}
+
+.overlay {
+  display: none;
+}
+
+.img-content:hover .overlay {
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
 }

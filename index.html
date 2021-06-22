@@ -13,27 +13,27 @@
 <body>
     <div class="wrapper">
         <!-- NAVBAR  -->
-        <nav id="navbar" class="p-20">
+        <nav id="navbar" class="p-20 d-flex">
             <img src="./img/logo.svg" alt="logo" id="logo">
-            <nav class="nav-1st ">
+            <nav class="nav-1st d-flex m-20">
                 <a href="#">
                     <img src="./img/home.svg" alt="Home" class="icons">
-                    <span>home</span>
+                    <span>Home</span>
                 </a>
                 <a href="#">
                     <img src="./img/search.svg" alt="Search">
-                    <span>cerca</span>
+                    <span>Cerca</span>
                 </a>
                 <a href="#">
                     <img src="./img/libreria.svg" alt="Library">
-                    <span>la tua playlist</span>
+                    <span>La tua playlist</span>
                 </a>
             </nav>
             <nav class="nav-2nd">
-                <h4>Playlist</h4>
+                <h4 class="m-10">PLAYLIST</h4>
                 <a href="#">
-                    <i class="fas fa-plus-square fa-2x"></i>
-                    <span>crea Playlist</span>
+                    <i class="fas fa-plus-square fa-3x"></i>
+                    <span>Crea Playlist</span>
                 </a>
                 <ul class="type">
                     <li><a href="#">Nome Playlist</a></li>
@@ -48,26 +48,27 @@
             <nav class="nav-3rd">
                 <div>
                     <a href="#"><img src="./img/download.svg" alt="download"></a>
-                    <a href="#">installa app</a>
+                    <a href="#" class="px-5">Installa app</a>
                 </div>
-                <hr>
-                <div>
+                <hr class="m-10">
+                <div> 
                     <img src="./img/profile.svg" alt="Profile">
-                    <span>John Doe</span>
+                    <span class="px-5">John Doe</span>
                 </div>
             </nav>
         </nav>
         <!-- MAIN -->
         <main>
             <!-- HEADER -->
-            <header id="main-header">
+            <header id="main-header" class="d-flex middle end">
                 <div class="btn txt-right">
                     <a class="" href="#">Effettua l'upgrade</a>
                 </div>
             </header>
             <!-- ALBUM SECTION-->
             <section class="album">
-                <ul class="type main-nav">
+                <!-- MAIN NAV  -->
+                <ul class="type main-nav d-flex center">
                     <li class="active"><a href="">In evidenza</a></li>
                     <li><a href="#">Podcast</a></li>
                     <li><a href="#">Classifiche</a></li>
@@ -75,96 +76,99 @@
                     <li><a href="#">Nuove uscite</a></li>
                     <li><a href="#">Scopri</a></li>
                 </ul>
+                <!-- SECTION ONE  -->
                 <section id="recently-played">
                     <h1 class="m-30">Recently Played</h1>
                     <div class="row txt-center">
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <a href=""><img src="./img/metal_lifting.jpg" alt="cover-album" class="boh"></a>
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/metal_lifting.jpg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
                             <h4 class="m-10">Heavy Metal</h4>
-                            <p class="m-10">Subtitle</p>
+                            <p class="m-10 txt-gray">Subtitle</p>
                         </div>
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/stranger.jpeg" alt="cover-album">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/stranger.jpeg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>    
-                            <h4 class="m-10">Stranger things, Vol. 1 (a Netflix series soundtrack) </h4>
-                            <p class="m-10">kyle dixon & michael stein</p>
+                            <h4 class="m-10">Stranger Things, Vol. 1 (a Netflix Series Soundtrack) </h4>
+                            <p class="m-10 txt-gray">Kyle dixon & Michael Stein</p>
                         </div>
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/aquietplace.jpeg" alt="cover-album">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/aquietplace.jpeg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">a quiet place</h4>
-                            <p class="m-10">Subtitle</p>
+                            <h4 class="m-10">A quiet place</h4>
+                            <p class="m-10 txt-gray">Subtitle</p>
                         </div>
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/split.jpeg" alt="cover-album">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/split.jpeg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">split</h4>
-                            <p class="m-10">Subtitle</p>
+                            <h4 class="m-10">Split</h4>
+                            <p class="m-10 txt-gray">Subtitle</p>
                         </div>
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/cure.jpeg" alt="cover-album">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/cure.jpeg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">a cure for wellness</h4>
-                            <p class="m-10">Subtitle</p>
+                            <h4 class="m-10">A cure for wellness</h4>
+                            <p class="m-10 txt-gray">Subtitle</p>
                         </div>
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/sinister.jpeg" alt="cover-album">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/sinister.jpeg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">sinister</h4>
-                            <p class="m-10">Subtitle</p>
+                            <h4 class="m-10">Sinister</h4>
+                            <p class="m-10 txt-gray">Subtitle</p>
                         </div>
                     </div>
                 </section>
+                <!-- SECTION TWO  -->
                 <section id="created-for" class="m-30">
-                    <h1 class="m-10">creato per john doe</h1>
-                    <p class="m-10">più ascolti, più i suggerimenti saranno accurati</p>
+                    <h1 class="m-10">Creato per John Doe</h1>
+                    <p class="m-10">Più ascolti, più i suggerimenti saranno accurati</p>
                     <div class="row txt-center">
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/radar.jpeg" alt="cover-album">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/radar.jpeg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">release radar</h4>
+                            <h4 class="m-10">Release Radar</h4>
                         </div>
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/mixdaily.jpeg" alt="cover-album">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/mixdaily.jpeg" alt="cover-album" class="cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">daily mix 1</h4>
+                            <h4 class="m-10">Daily Mix 1</h4>
                         </div>
                     </div>
                 </section>
+                <!-- SECTION THREE -->
                 <section id="popular" class="m-30">
-                    <h1 class="m-10">rtisti più popolari</h1>
-                    <p class="m-10">più ascolti, più i suggerimenti saranno accurati</p>
+                    <h1 class="m-10">Artisti più popolari</h1>
+                    <p class="m-10">Più ascolti, più i suggerimenti saranno accurati</p>
                     <div class="row txt-center">
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/youg.jpeg" alt="cover-album" class="circle">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/youg.jpeg" alt="cover-album" class="circle cover" ></a>
+                                <a href="#"><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">lana del ray</h4>
+                            <h4 class="m-10">Lana del Ray</h4>
                         </div>
                         <div class="col-6 col-md-3 col-lg-2">
                             <div class="img-content">
-                                <img src="./img/einaudi.jpeg" alt="cover-album" class="circle">
-                                <i class="overlay far fa-play-circle fa-5x"></i>
+                                <a href=""><img src="./img/einaudi.jpeg" alt="cover-album" class="circle cover"></a>
+                                <a href=""><i class="overlay far fa-play-circle fa-5x"></i></a>
                             </div>
-                            <h4 class="m-10">ludovico einaudi</h4>
+                            <h4 class="m-10">Ludovico Einaudi</h4>
                         </div>
                     </div>
                 </section>
@@ -172,7 +176,7 @@
         </main>
     </div>
     <!-- FOOTER  -->
-    <footer class="player d-flex">
+    <footer class="player d-flex middle">
         <!-- CONTROL LEFT  -->
         <div class="d-flex control-left middle">
             <div>
@@ -180,10 +184,10 @@
             </div>
             <div>
                 <div>Sinister</div>
-                <a href="#">brano nome</a>
+                <a href="#" class="underline">Brano Nome</a>
             </div>
-            <div class="p-20">
-                <a href=""><i class="p-20 far fa-heart"></i></a>
+            <div class="px-20">
+                <a href=""><i class="px-20 far fa-heart"></i></a>
                 <a href=""><i class="far fa-folder"></i></a>
             </div>
         </div>
@@ -197,20 +201,25 @@
                 <a href=""><i class="fas fa-redo-alt"></i></a>
             </div>
             <div class="row middle">
-                <div class="p-20">0.25</div>
+                <div class="px-20">0.25</div>
                 <div class="progression-bar">
-                    <div class="progression"></div>
+                    <div class="progression">
+                        <div class="marker"></div>
+                    </div>
                 </div>
-                <div class="p-20">4.35</div>
+                <div class="px-20">4.35</div>
             </div>
         </div>
      
         <!-- CONTROL RIGHT  -->
-        <div class="d-flex control-right middle p-20">
+        <div class="d-flex control-right middle px-20">
             <a href=""><i class="fas fa-list-ul"></i></a>
-            <a href=""><i class="p-20 fas fa-desktop"></i></a>
+            <a href=""><i class="px-20 fas fa-desktop"></i></a>
             <div class="progression-bar small">
-                <div class="progression small"></div>
+                <div class="progression small">
+                    <div class="marker"></div>
+                </div>
+                
             </div>
         </div> 
     </footer>
