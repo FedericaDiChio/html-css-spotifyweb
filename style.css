@@ -91,10 +91,6 @@ a:hover {
   
 }
 
-#navbar .nav-1st {
-    flex-direction: column;
-}
-
 .nav-1st img {
     width: 25px;
 }
