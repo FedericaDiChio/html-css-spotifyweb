@@ -1,6 +1,6 @@
 /* GENERICS */
 body {
-    font-size: 10px;
+    font-size: 12px;
     color:white;
     font-family: "Montserrat", "San-serif";
 }
@@ -180,6 +180,7 @@ a:hover {
     justify-content: space-between;
     height: 80px;
     background-color: rgb(40, 40, 40);
+
 }
 
 .player img {
@@ -278,3 +279,4 @@ a:hover {
     transform: translate(-50%, -50%);
     display: block;
 }
+
