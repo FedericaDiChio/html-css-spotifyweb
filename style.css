@@ -127,6 +127,26 @@ a:hover {
     padding: 0 15px;
 }
 
+
+/* ICON  */
+
+.img-content {
+    position: relative;
+}
+
+.icon {
+  display: none;
+}
+
+.img-content:hover .icon {
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
 /* 
 .txt-white {
     color: white;
@@ -134,16 +154,13 @@ a:hover {
 
 /* HEADER  */
 #main-header {
+    z-index: 1;
     position: fixed;
     width: calc(100% - 60px);
     top: 0;
     right: 0;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.btn {
-             
 }
 
 .btn a {
@@ -161,11 +178,10 @@ a:hover {
 
 /* FOOTER  */
 .player {
+    z-index: 0;
     justify-content: space-between;
     height: 80px;
     background-color: rgb(40, 40, 40);
-    position: relative;
-
 }
 
 .player img {
@@ -179,8 +195,7 @@ a:hover {
 
 /* PLAYER CENTRALE  */
 .player .control-center {
-    flex-direction: column;
-    
+   flex-direction: column;
 }
 
 .control-center i {
@@ -201,7 +216,7 @@ a:hover {
 
 /* PROGRESSION BAR  */
 .progression-bar {
-    position: relative;
+    /* position: relative; */
     width: 400px;
     height: 5px;
     border-radius: 5px;
@@ -246,25 +261,6 @@ a:hover {
 }
 
 
-
-/* ICON  */
-
-.img-content {
-    position: relative;
-}
-
-.icon {
-  display: none;
-}
-
-.img-content:hover .icon {
-    color:white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-}
 
 
 
