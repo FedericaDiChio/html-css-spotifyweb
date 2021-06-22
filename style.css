@@ -97,7 +97,6 @@ a:hover {
     justify-content: space-between;
     padding-bottom: 20px;
     padding-top: 10px;
-    
 }
 
 
@@ -181,6 +180,7 @@ a:hover {
 /* PLAYER CENTRALE  */
 .player .control-center {
     flex-direction: column;
+    
 }
 
 .control-center i {
@@ -247,7 +247,7 @@ a:hover {
 
 
 
-/* OVERLAY  */
+/* ICON  */
 
 .img-content {
     position: relative;
@@ -300,14 +300,11 @@ a:hover {
     #navbar .nav-1st li {
         margin: 10px 0;
     }
-
-    #navbar #nav-2nd {
-        min-height: 500px;
-    }
-       
+      
     #main-header {
         width: calc(100% - 230px);
     }
+
 
 }
 
