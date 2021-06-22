@@ -215,7 +215,7 @@ a:hover {
 /* PROGRESSION BAR  */
 .progression-bar {
     position: relative;
-    width: 220px;
+    width: 400px;
     height: 5px;
     border-radius: 5px;
     background-color: gray;
@@ -224,7 +224,7 @@ a:hover {
 .progression {
     background-color: lightgrey;
     position: absolute;
-    width: 60px;
+    width: 100px;
     border-radius: 5px;
     height: 5px;
 }
@@ -241,8 +241,6 @@ a:hover {
 .big-btn:hover {
     transform: scale(1.2);
 }
-
-
 
 .progression-bar:hover .progression{
     background-color: green;
