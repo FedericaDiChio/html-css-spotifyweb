@@ -263,11 +263,11 @@ a:hover {
     position: relative;
 }
 
-.overlay {
+.icon {
   display: none;
 }
 
-.img-content:hover .overlay {
+.img-content:hover .icon {
     color:white;
     position: absolute;
     top: 50%;
